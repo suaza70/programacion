@@ -1,0 +1,125 @@
+{
+    "info": {
+        "name": "ZoologicoAPI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET Animales",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/Animal",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "Animal"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST Animal",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Tigre de Bengala\",\n    \"nombreAnimal\": \"Tigre\",\n    \"especie\": \"Felino\",\n    \"sexo\": \"Macho\",\n    \"tamano\": 2.5,\n    \"peso\": 220,\n    \"edad\": 5,\n    \"habitat\": {\n        \"id\": 1,\n        \"tipo\": \"Selva\",\n        \"nombre\": \"Selva Asi\\u00e1tica\",\n        \"especie\": \"Felino\"\n    }\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/Animal",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "Animal"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "GET Zoologicos",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:5000/Zoologico",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "Zoologico"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST Zoologico",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Zool\\u00f3gico de Manizales\"\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/Zoologico",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "Zoologico"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "POST Persona",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"nombre\": \"Mar\\u00eda P\\u00e9rez\",\n    \"cedula\": \"1234567890\",\n    \"email\": \"maria@zoo.com\",\n    \"edad\": 30\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/Persona",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "Persona"
+                    ]
+                }
+            }
+        }
+    ]
+}
