@@ -1,0 +1,250 @@
+{
+  "info": {
+    "name": "ZoologicoAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Animales",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/Animal",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Animal"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST Animal",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Elefante Africano\", \"nombreAnimal\": \"Elefante\", \"especie\": \"Mam\\u00edfero\", \"sexo\": \"Macho\", \"tamano\": 3.2, \"peso\": 5400, \"edad\": 15, \"habitat\": {\"id\": 11, \"tipo\": \"Selva\", \"nombre\": \"Selva del Congo\", \"especie\": \"Mam\\u00edfero\", \"animales\": []}}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/Animal",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Animal"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE Animal {id}",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/Animal/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Animal",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "PUT Animal {id}",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Elefante Asi\\u00e1tico\", \"nombreAnimal\": \"Elefante\", \"especie\": \"Mam\\u00edfero\", \"sexo\": \"Hembra\", \"tamano\": 2.7, \"peso\": 4800, \"edad\": 12, \"habitat\": {\"id\": 11, \"tipo\": \"Selva\", \"nombre\": \"Selva del Congo\", \"especie\": \"Mam\\u00edfero\", \"animales\": []}}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/Animal/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Animal",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET Habitat",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/Habitat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Habitat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST Habitat",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"id\": 15, \"tipo\": \"Acu\\u00e1tico\", \"nombre\": \"Oc\\u00e9ano Pac\\u00edfico\", \"especie\": \"Pez\"}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/Habitat",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Habitat"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DELETE Habitat {id}",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:5000/Habitat/15",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Habitat",
+            "15"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET Persona",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/Persona",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Persona"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST Persona",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Laura Torres\", \"cedula\": \"1023456789\", \"email\": \"laura@example.com\", \"edad\": 29}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/Persona",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Persona"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET Zoologico",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/Zoologico",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Zoologico"
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST Zoologico",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Zool\\u00f3gico Manizales\", \"edad\": 20, \"animales\": [], \"personas\": []}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/Zoologico",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "Zoologico"
+          ]
+        }
+      }
+    }
+  ]
+}
